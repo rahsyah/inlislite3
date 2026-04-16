@@ -1,0 +1,140 @@
+2018-06-29 16:42:54 [-][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\elastic\Catalogruas::SourceCatID' in D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\db\BaseActiveRecord.php(267): yii\base\Component->__set('SourceCatID', 'fba20520d22226d...')
+#1 D:\xampp\htdocs\inlislite31\common\components\ElasticHelper.php(94): yii\db\BaseActiveRecord->__set('SourceCatID', 'fba20520d22226d...')
+#2 D:\xampp\htdocs\inlislite31\common\components\ElasticHelper.php(72): common\components\ElasticHelper::Insert(Array)
+#3 D:\xampp\htdocs\inlislite31\console\controllers\IndexingController.php(19): common\components\ElasticHelper::CreateAllIndexAdvance()
+#4 [internal function]: console\controllers\IndexingController->actionIndex()
+#5 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#8 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#9 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('indexing', Array)
+#10 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('indexing', Array)
+#11 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 D:\xampp\htdocs\inlislite31\yii(31): yii\base\Application->run()
+#13 {main}
+2018-06-29 16:42:51 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Didik Pribadi\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8B48LKD'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ES_CONFIG' => 'C:\\ProgramData\\Elastic\\Elasticsearch\\config'
+    'ES_HOME' => 'C:\\Program Files\\Elastic\\Elasticsearch\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Didik Pribadi'
+    'LOCALAPPDATA' => 'C:\\Users\\Didik Pribadi\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8B48LKD'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Didik Pribadi\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\PuTTY\\;C:\\Users\\Didik Pribadi\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Didik Pribadi\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\DIDIKP~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\DIDIKP~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8B48LKD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8B48LKD'
+    'USERNAME' => 'Didik Pribadi'
+    'USERPROFILE' => 'C:\\Users\\Didik Pribadi'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530265366.339
+    'REQUEST_TIME' => 1530265366
+    'argv' => [
+        0 => 'yii'
+        1 => 'indexing'
+    ]
+    'argc' => 2
+]
+2018-06-29 16:43:25 [-][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\elastic\Catalogruas::SourceCatID' in D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\db\BaseActiveRecord.php(267): yii\base\Component->__set('SourceCatID', 'fba20520d22226d...')
+#1 D:\xampp\htdocs\inlislite31\common\components\ElasticHelper.php(94): yii\db\BaseActiveRecord->__set('SourceCatID', 'fba20520d22226d...')
+#2 D:\xampp\htdocs\inlislite31\common\components\ElasticHelper.php(72): common\components\ElasticHelper::Insert(Array)
+#3 D:\xampp\htdocs\inlislite31\console\controllers\IndexingController.php(19): common\components\ElasticHelper::CreateAllIndexAdvance()
+#4 [internal function]: console\controllers\IndexingController->actionIndex()
+#5 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#8 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#9 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('indexing', Array)
+#10 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('indexing', Array)
+#11 D:\xampp\htdocs\inlislite31\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 D:\xampp\htdocs\inlislite31\yii(31): yii\base\Application->run()
+#13 {main}
+2018-06-29 16:43:22 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Didik Pribadi\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-8B48LKD'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ES_CONFIG' => 'C:\\ProgramData\\Elastic\\Elasticsearch\\config'
+    'ES_HOME' => 'C:\\Program Files\\Elastic\\Elasticsearch\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Didik Pribadi'
+    'LOCALAPPDATA' => 'C:\\Users\\Didik Pribadi\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-8B48LKD'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Didik Pribadi\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\PuTTY\\;C:\\Users\\Didik Pribadi\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Didik Pribadi\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\DIDIKP~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\DIDIKP~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-8B48LKD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-8B48LKD'
+    'USERNAME' => 'Didik Pribadi'
+    'USERPROFILE' => 'C:\\Users\\Didik Pribadi'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1530265401.917
+    'REQUEST_TIME' => 1530265401
+    'argv' => [
+        0 => 'yii'
+        1 => 'indexing'
+    ]
+    'argc' => 2
+]
